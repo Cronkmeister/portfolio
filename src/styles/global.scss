@@ -3,6 +3,9 @@
 @forward "./partials/_reset.scss";
 @forward "./partials/_variables";
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
 body {
-  font-family: "Roboto Mono";
+  // font-family: "Roboto Mono";
+  font-family: "Poppins";
 }

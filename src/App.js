@@ -19,17 +19,32 @@ function App() {
       <GlobalStyles />
 
       <div className="app">
-        <NavBar />
         <section className="hero">
+          <NavBar />
           <div className="hero__wrapper">
-            <p className="hero__text">Hello 👋 my name is Jonny</p>
-            <p className="hero__text">I am a front end web developer</p>
+            {/* new title */}
+
+            <div class="box">
+              <div class="title">
+                <span class="block"></span>
+                <h1>
+                  Jonny Cronk<span></span>
+                </h1>
+              </div>
+
+              <div class="role">
+                <div class="block"></div>
+                <p>Front end web developer</p>
+              </div>
+            </div>
           </div>
           <div className="hero__switch-container">
             <Switch switchTheme={switchTheme} theme={theme} />
           </div>
         </section>
-        <div className="divider">{/* <BsChevronCompactDown /> */}</div>
+        <div className="divider">
+          <BsChevronCompactDown className="divider__arrow" />
+        </div>
         <About />
       </div>
     </ThemeProvider>
@@ -37,3 +52,5 @@ function App() {
 }
 
 export default App;
+
+//credit to: KaioRocha https://codepen.io/KaioRocha/pen/YoEVvZ
