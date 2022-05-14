@@ -1,0 +1,17 @@
+@use "./styles/global.scss" as *;
+
+
+.hero {
+    height: 80vh;
+    position: relative;
+    &__wrapper {
+        @include margin;
+        @include display-flex(column, flex-start, center);
+        height: 100%;
+    }
+    &__switch-container {
+        position: absolute;
+        right: 1rem;
+    }
+}
+

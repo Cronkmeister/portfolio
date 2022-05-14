@@ -1,0 +1,14 @@
+@use "../../styles/global.scss" as *;
+
+.navbar {
+    &__wrapper {
+        @include margin;
+    }
+    &__links {
+        @include display-flex(row, center, flex-end);
+        @include component-margin-top-bottom;
+    }
+    &__link-item {
+        margin-left: 1rem;
+    }
+}
