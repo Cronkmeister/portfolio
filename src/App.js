@@ -2,11 +2,14 @@ import "./App.scss";
 import "./styles/global.scss";
 import NavBar from "./components/NavBar/NavBar";
 import Switch from "./components/Switch/Switch";
+import About from "./components/About/About";
 import { useDarkMode } from "./utils/useDarkMode";
 
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./styles/themes";
 import React from "react";
+
+import { BsChevronCompactDown } from "react-icons/bs";
 
 function App() {
   const [theme, switchTheme] = useDarkMode();
@@ -26,6 +29,8 @@ function App() {
             <Switch switchTheme={switchTheme} theme={theme} />
           </div>
         </section>
+        <div className="divider">{/* <BsChevronCompactDown /> */}</div>
+        <About />
       </div>
     </ThemeProvider>
   );
