@@ -22,6 +22,17 @@
     }
 }
 
+.divider {
+    text-align: center;
+    &__arrow {
+        font-size: 2rem;
+        font-weight: 400;
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+}
 //title styles
 
   

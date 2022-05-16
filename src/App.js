@@ -2,7 +2,8 @@ import "./App.scss";
 import "./styles/global.scss";
 import NavBar from "./components/NavBar/NavBar";
 import Switch from "./components/Switch/Switch";
-import About from "./components/About/About";
+import About from "./pages/About/About";
+import Skills from "./pages/Skills/Skills";
 import { useDarkMode } from "./utils/useDarkMode";
 
 import { ThemeProvider } from "styled-components";
@@ -22,8 +23,6 @@ function App() {
         <section className="hero">
           <NavBar />
           <div className="hero__wrapper">
-            {/* new title */}
-
             <div class="box">
               <div class="title">
                 <span class="block"></span>
@@ -46,6 +45,7 @@ function App() {
           <BsChevronCompactDown className="divider__arrow" />
         </div>
         <About />
+        <Skills />
       </div>
     </ThemeProvider>
   );

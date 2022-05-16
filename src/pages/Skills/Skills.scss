@@ -1,0 +1,37 @@
+@use "../../styles/global.scss" as *;
+
+.skills {
+    &__wrappper {
+        @include margin;
+    }
+    &__title {
+        @include section-header;
+        @include header-padding;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        max-width: 800px;
+        margin: auto;
+        
+
+
+    }
+    &__grid-item {
+        text-align: center;
+        &--logo {
+            font-size: 3rem;
+        }
+        &--text {
+            @include labels-buttons
+        }
+    }
+}
+
+.section-divider {
+    height: 4rem;
+}
