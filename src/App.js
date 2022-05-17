@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Switch from "./components/Switch/Switch";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
 import { useDarkMode } from "./utils/useDarkMode";
 
 import { ThemeProvider } from "styled-components";
@@ -46,6 +47,7 @@ function App() {
         </div>
         <About />
         <Skills />
+        <Projects />
       </div>
     </ThemeProvider>
   );
