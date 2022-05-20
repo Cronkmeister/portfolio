@@ -74,8 +74,8 @@
   line-height: 1.25rem;
   font-weight: 400;
   @include tablet {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
     font-weight: 400;
   }
 }
@@ -144,7 +144,7 @@
   }
 }
 
-@mixin component-margin-top-bottom-flex {
+@mixin component-margin-top-bottom-small {
   margin-top: $mobile-margin/2;
   margin-bottom: $mobile-margin/2;
   @include tablet {

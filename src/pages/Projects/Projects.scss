@@ -11,35 +11,3 @@
     }
 }
 
-.proj {
-    &__container {
-        &--left {
-            position: relative;
-            height: 300px;
-            width: 450px;
-            overflow: hidden;
-        }
-    }
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        filter: grayscale(100%);
-        transition: ease-in 0.2s;
-        &::before {
-            content: "";
-            position: absolute;
-            z-index: 3;
-        }
-        &:hover {
-            filter: none;
-            transform: scale(1.03);
-            overflow: hidden;
-            cursor: pointer;
-
-        }
-    }
-}
