@@ -1,0 +1,28 @@
+@use "../../styles/global.scss" as *;
+
+.contact {
+    &__wrapper {
+        @include margin;
+    }
+    &__title {
+        @include page-header;
+        @include header-padding;
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+        @include body-copy;
+    }
+    &__icons-container {
+        text-align: center;
+        @include component-margin-top-bottom-small;
+    }
+    &__icon {
+        font-size: 2rem;
+        padding: 4px 8px;
+        &:hover {
+            color: $color-icon;
+        }
+    }
+
+}

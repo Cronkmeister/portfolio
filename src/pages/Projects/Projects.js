@@ -84,15 +84,16 @@ function Projects() {
             <ProjectSideSwap
               screenshot={travelSite}
               title="Travel Site"
-              description=""
+              description="The website for a fictional travel site"
               tech1="HTML"
-              tech2=""
+              tech2="BEM"
               tech3="SASS"
               github=""
               website=""
             />
           </div>
         </div>
+        <div className="section-divider"></div>
       </section>
     </>
   );
