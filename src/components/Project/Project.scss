@@ -75,6 +75,7 @@
     &__icon {
         font-size: 1.5rem;
         margin: 0.25rem;
+        pointer-events: auto;
         &:hover {
             pointer-events: all;
             color: $color-icon;
@@ -93,14 +94,14 @@
     height: 300px;
     overflow: hidden;
     z-index: 2; 
-    // pointer-events: none; 
+    pointer-events: none; 
 }
 .left {
     text-align: left;
     height: 300px;
     overflow: hidden;
     z-index: 2;
-    // pointer-events: none;   
+    pointer-events: none;   
 }
 
 
