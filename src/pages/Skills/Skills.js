@@ -16,7 +16,9 @@ function Skills() {
     <>
       <section className="skills">
         <div className="skills__wrapper">
-          <h2 className="skills__title">Skills</h2>
+          <h2 className="skills__title" id="skills">
+            Skills
+          </h2>
           <div className="skills__grid-container">
             {/* front end */}
             <div className="skills__grid-item">

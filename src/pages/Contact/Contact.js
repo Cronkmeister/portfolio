@@ -7,7 +7,9 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact__wrapper">
-        <h1 className="contact__title">Contact</h1>
+        <h1 className="contact__title" id="contact">
+          Contact
+        </h1>
         <p className="contact__text">
           I would love to chat with you! Please feel to feel out to me using any
           medium
@@ -17,10 +19,18 @@ function Contact() {
           <a href="mailto:jonnycronk@me.com">
             <FiMail className="contact__icon" />
           </a>
-          <a href="https://www.linkedin.com/in/jonathan-cronk/">
+          <a
+            href="https://www.linkedin.com/in/jonathan-cronk/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiLinkedin className="contact__icon" />
           </a>
-          <a href="https://www.instagram.com/jonnycronk/">
+          <a
+            href="https://www.instagram.com/jonnycronk/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaInstagram className="contact__icon" />
           </a>
         </div>

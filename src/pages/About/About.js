@@ -4,7 +4,9 @@ function About() {
   return (
     <section className="about">
       <div className="about__wrapper">
-        <h2 className="about__title">About Me</h2>
+        <h2 className="about__title" id="about">
+          About Me
+        </h2>
         <p className="about__text">
           From a young age I have been building. I loved creating structures
           from legos as a kid and later on working as a chef in restaurants.
