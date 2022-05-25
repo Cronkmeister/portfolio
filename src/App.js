@@ -6,13 +6,12 @@ import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
+import Divider from "./components/Divider/Divider";
 import { useDarkMode } from "./utils/useDarkMode";
 
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./styles/themes";
 import React from "react";
-
-import { BsChevronCompactDown } from "react-icons/bs";
 
 function App() {
   const [theme, switchTheme] = useDarkMode();
@@ -25,16 +24,16 @@ function App() {
         <section className="hero">
           <NavBar />
           <div className="hero__wrapper">
-            <div class="box">
-              <div class="title">
-                <span class="block"></span>
+            <div className="box">
+              <div className="title">
+                <span className="block"></span>
                 <h1>
                   Jonny Cronk<span></span>
                 </h1>
               </div>
 
-              <div class="role">
-                <div class="block"></div>
+              <div className="role">
+                <div className="block"></div>
                 <p>Front end web developer</p>
               </div>
             </div>
@@ -42,10 +41,9 @@ function App() {
           <div className="hero__switch-container">
             <Switch switchTheme={switchTheme} theme={theme} />
           </div>
+          <Divider link="#about" />
         </section>
-        <div className="divider">
-          <BsChevronCompactDown className="divider__arrow" />
-        </div>
+
         <About />
         <Skills />
         <Projects />

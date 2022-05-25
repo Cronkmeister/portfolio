@@ -1,4 +1,5 @@
 import "./Skills.scss";
+import Divider from "../../components/Divider/Divider";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoSass } from "react-icons/io";
 import {
@@ -14,11 +15,9 @@ import { FaDatabase, FaGithub, FaTerminal, FaFigma } from "react-icons/fa";
 function Skills() {
   return (
     <>
-      <section className="skills">
+      <section className="skills" id="skills">
         <div className="skills__wrapper">
-          <h2 className="skills__title" id="skills">
-            Skills
-          </h2>
+          <h2 className="skills__title">Skills</h2>
           <div className="skills__grid-container">
             {/* front end */}
             <div className="skills__grid-item">
@@ -85,7 +84,7 @@ function Skills() {
             </div>
           </div>
         </div>
-        <div className="section-divider"></div>
+        <Divider link="#projects" />
       </section>
     </>
   );

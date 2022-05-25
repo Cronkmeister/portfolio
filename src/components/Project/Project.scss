@@ -34,7 +34,8 @@
         filter: grayscale(100%);
         transition: ease-in 0.2s;
         border-radius: 10px;
-        box-shadow: 0 2px 7px 3px rgba(203, 203, 203, 0.8);
+        // box-shadow: 0 2px 7px 3px rgba(203, 203, 203, 0.8);
+        box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.3);
 
         &::before {
             content: "";
@@ -104,10 +105,21 @@
     pointer-events: none;   
 }
 
-
-
 //border for middle tech stack item
 .middle {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
+
+//fade - in annimation 
+
+// .fade-in {
+//     position: relative;
+//     transform: translateX(150px);
+//     opacity: 0;
+//     transition: 1s all ease;
+// }
+// .fade-in .active {
+//     transform: translateX(0);
+//     opacity: 1;
+// }

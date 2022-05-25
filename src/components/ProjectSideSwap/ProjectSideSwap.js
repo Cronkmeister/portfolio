@@ -1,11 +1,22 @@
 import "../ProjectSideSwap/ProjectSideSwap.scss";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { useInView } from "react-intersection-observer";
 
 function ProjectSideSwap(props) {
+  const { ref: myRef, inView } = useInView({
+    threshold: 0.8,
+    triggerOnce: true,
+  });
+
   return (
     <>
       <div className="proj__container">
-        <div className="proj__container--left left">
+        <div
+          className={`proj__container--left left fade-in-left ${
+            inView ? "appear" : ""
+          }`}
+          ref={myRef}
+        >
           <h3 className="proj__heading">{props.title}</h3>
           <p className="proj__text">{props.description}</p>
           <ul className="proj__tech-list">
@@ -20,7 +31,12 @@ function ProjectSideSwap(props) {
             <FiExternalLink className="proj__icon" />
           </a>
         </div>
-        <div className="proj__container--right">
+        <div
+          className={`proj__container--right fade-in-right ${
+            inView ? "appear" : ""
+          }`}
+          ref={myRef}
+        >
           <img
             className="proj__img"
             src={props.screenshot}

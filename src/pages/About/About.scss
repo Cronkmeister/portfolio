@@ -1,11 +1,12 @@
 @use "../../styles/global.scss" as *;
 
 .about {
-    
-    @include component-margin-top-bottom;
+    height: 100vh;
+    position: relative;
     &__wrapper {
         @include margin;
         @include display-flex(column, center, center);
+        height: 100%;
     }
     &__title {
         text-align: center;
@@ -18,3 +19,4 @@
         @include body-copy;
     }
 }
+

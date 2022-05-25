@@ -162,6 +162,16 @@
   }
 }
 
+//reveal animations 
+@mixin reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+  
+}
+
+
 //buttons
 @mixin CTA-button {
   @include labels-buttons;
