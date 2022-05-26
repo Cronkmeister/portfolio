@@ -1,11 +1,13 @@
 import "../ProjectSideSwap/ProjectSideSwap.scss";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { useInView } from "react-intersection-observer";
+import { AiFillLock } from "react-icons/ai";
 
 function ProjectSideSwap(props) {
   const { ref: myRef, inView } = useInView({
-    threshold: 0.8,
+    threshold: 0.2,
     triggerOnce: true,
+    rootMargin: "0px 0px -200px 0px",
   });
 
   return (
@@ -24,10 +26,14 @@ function ProjectSideSwap(props) {
             <span className="proj__tech-list--item middle">{props.tech2}</span>
             <span className="proj__tech-list--item">{props.tech3}</span>
           </ul>
-          <a href={props.github} target="_blank">
-            <FiGithub className="proj__icon" />
-          </a>
-          <a href={props.website} target="_blank">
+          {props.private ? (
+            <AiFillLock className="proj__icon--lock" />
+          ) : (
+            <a href={props.github} target="_blank" rel="noreferrer">
+              <FiGithub className="proj__icon" />
+            </a>
+          )}
+          <a href={props.website} target="_blank" rel="noreferrer">
             <FiExternalLink className="proj__icon" />
           </a>
         </div>

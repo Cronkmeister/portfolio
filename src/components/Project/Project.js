@@ -1,5 +1,4 @@
 import "./Project.scss";
-import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { AiFillLock } from "react-icons/ai";
@@ -8,18 +7,8 @@ function Project(props) {
   const { ref: myRef, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
+    rootMargin: "0px 0px -200px 0px",
   });
-
-  // const myRef = useRef();
-  // const [elementIsVisible, setElementIsVisible] = useState();
-  // // console.log("elementIsVisible", elementIsVisible);
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const entry = entries[0];
-  //     setElementIsVisible(entry.isIntersecting);
-  //   });
-  //   observer.observe(myRef.current);
-  // }, []);
 
   return (
     <>
@@ -49,10 +38,14 @@ function Project(props) {
             <span className="proj__tech-list--item">{props.tech3}</span>
           </ul>
           <div className="proj__icon-container">
-            <a href={props.github} target="_blank">
-              <FiGithub className="proj__icon" />
-            </a>
-            <a href={props.website} target="_blank">
+            {props.private ? (
+              <AiFillLock className="proj__icon--lock" />
+            ) : (
+              <a href={props.github} target="_blank" rel="noreferrer">
+                <FiGithub className="proj__icon" />
+              </a>
+            )}
+            <a href={props.website} target="_blank" rel="noreferrer">
               <FiExternalLink className="proj__icon" />
             </a>
           </div>

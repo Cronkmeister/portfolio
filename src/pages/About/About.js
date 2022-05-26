@@ -1,6 +1,5 @@
 import "./About.scss";
 import Divider from "../../components/Divider/Divider";
-import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 function About() {

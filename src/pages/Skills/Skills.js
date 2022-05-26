@@ -1,5 +1,9 @@
 import "./Skills.scss";
+import { useInView } from "react-intersection-observer";
 import Divider from "../../components/Divider/Divider";
+import Skill from "../../components/Skill/Skill";
+
+//icons
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoSass } from "react-icons/io";
 import {
@@ -13,75 +17,43 @@ import { GrReactjs, GrNode, GrMysql } from "react-icons/gr";
 import { FaDatabase, FaGithub, FaTerminal, FaFigma } from "react-icons/fa";
 
 function Skills() {
+  const { ref: titleRef, inView: titleIsVisible } = useInView({
+    threshold: 1,
+    rootMargin: "0px 0px -100px 0px",
+    // triggerOnce: true,
+  });
+
   return (
     <>
       <section className="skills" id="skills">
         <div className="skills__wrapper">
-          <h2 className="skills__title">Skills</h2>
+          <h2
+            className={`skills__title fade-in ${
+              titleIsVisible ? "appear" : ""
+            }`}
+            ref={titleRef}
+          >
+            Skills
+          </h2>
           <div className="skills__grid-container">
             {/* front end */}
-            <div className="skills__grid-item">
-              <AiOutlineHtml5 className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">HTML5</p>
-            </div>
-            <div className="skills__grid-item">
-              <IoLogoCss3 className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">CSS</p>
-            </div>
-            <div className="skills__grid-item">
-              <SiJavascript className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Javascript</p>
-            </div>
-            <div className="skills__grid-item">
-              <IoLogoSass className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Sass</p>
-            </div>
-            <div className="skills__grid-item">
-              <GrReactjs className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">React</p>
-            </div>
+            <Skill skill="HTML5" icon={AiOutlineHtml5} />
+            <Skill skill="CSS" icon={IoLogoCss3} />
+            <Skill skill="Javascript" icon={SiJavascript} />
+            <Skill skill="Sass" icon={IoLogoSass} />
+            <Skill skill="React" icon={GrReactjs} />
             {/* back end */}
-            <div className="skills__grid-item">
-              <GrNode className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Node</p>
-            </div>
-            <div className="skills__grid-item">
-              <SiExpress className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Express</p>
-            </div>
-            <div className="skills__grid-item">
-              <GrMysql className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">MySQL</p>
-            </div>
-            <div className="skills__grid-item">
-              <SiMongodb className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">MongoDB</p>
-            </div>
-            <div className="skills__grid-item">
-              <FaDatabase className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">REST api's</p>
-            </div>
+            <Skill skill="Node" icon={GrNode} />
+            <Skill skill="Express" icon={SiExpress} />
+            <Skill skill="MySQL" icon={GrMysql} />
+            <Skill skill="MongoDB" icon={SiMongodb} />
+            <Skill skill="REST api's" icon={FaDatabase} />
             {/* Other */}
-            <div className="skills__grid-item">
-              <FaGithub className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Git</p>
-            </div>
-            <div className="skills__grid-item">
-              <FaTerminal className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Command Line</p>
-            </div>
-            <div className="skills__grid-item">
-              <SiJira className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Jira</p>
-            </div>
-            <div className="skills__grid-item">
-              <SiPostman className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Postman</p>
-            </div>
-            <div className="skills__grid-item">
-              <FaFigma className="skills__grid-item--logo" />
-              <p className="skills__grid-item--text">Figma</p>
-            </div>
+            <Skill skill="Git" icon={FaGithub} />
+            <Skill skill="Command Line" icon={FaTerminal} />
+            <Skill skill="Jira" icon={SiJira} />
+            <Skill skill="Postman" icon={SiPostman} />
+            <Skill skill="Figma" icon={FaFigma} />
           </div>
         </div>
         <Divider link="#projects" />

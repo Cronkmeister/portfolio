@@ -32,6 +32,7 @@ function Projects() {
               tech3="SASS"
               github="https://github.com/Cronkmeister/journal"
               website=""
+              private={false}
             />
             <Project
               screenshot={dad_jokes}
@@ -42,6 +43,7 @@ function Projects() {
               tech3="CSS"
               github="https://github.com/Cronkmeister/joke-generator"
               website="https://joke-generator-three.vercel.app/"
+              private={false}
             />
             <ProjectSideSwap
               screenshot={brainflix}
@@ -52,6 +54,7 @@ function Projects() {
               tech3="Express"
               github=""
               website=""
+              private={true}
             />
             <Project
               screenshot={higherLower}
@@ -62,6 +65,7 @@ function Projects() {
               tech3="SASS"
               github="https://github.com/Cronkmeister/Higher-Or-Lower"
               website=""
+              private={false}
             />
             <ProjectSideSwap
               screenshot={inStock}
@@ -72,6 +76,7 @@ function Projects() {
               tech3="SASS"
               github="https://github.com/Cronkmeister/inStock"
               website=""
+              private={true}
             />
             <Project
               screenshot={bandsite}
@@ -82,6 +87,7 @@ function Projects() {
               tech3="Javascript"
               github=""
               website=""
+              private={true}
             />
             <ProjectSideSwap
               screenshot={travelSite}
@@ -92,6 +98,7 @@ function Projects() {
               tech3="SASS"
               github=""
               website=""
+              private={true}
             />
           </div>
         </div>
