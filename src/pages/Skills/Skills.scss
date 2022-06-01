@@ -9,7 +9,6 @@
     }
     &__title {
         @include section-header;
-        // @include header-padding;
         padding-bottom: 1rem;
         margin-bottom: 3rem;
         text-align: center;

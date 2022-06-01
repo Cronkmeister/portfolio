@@ -20,7 +20,7 @@ function Skills() {
   const { ref: titleRef, inView: titleIsVisible } = useInView({
     threshold: 1,
     rootMargin: "0px 0px -100px 0px",
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   return (

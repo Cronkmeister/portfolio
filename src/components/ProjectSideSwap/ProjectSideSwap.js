@@ -43,11 +43,13 @@ function ProjectSideSwap(props) {
           }`}
           ref={myRef}
         >
-          <img
-            className="proj__img"
-            src={props.screenshot}
-            alt="project screenshot"
-          ></img>
+          <a href={props.website} target="_blank" rel="noreferrer">
+            <img
+              className="proj__img"
+              src={props.screenshot}
+              alt="project screenshot"
+            ></img>
+          </a>
         </div>
       </div>
     </>

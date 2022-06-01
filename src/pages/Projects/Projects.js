@@ -53,7 +53,7 @@ function Projects() {
               tech2="JSON"
               tech3="Express"
               github=""
-              website=""
+              website="https://brainflix-jc.netlify.app/"
               private={true}
             />
             <Project
@@ -64,7 +64,7 @@ function Projects() {
               tech2="HTML"
               tech3="SASS"
               github="https://github.com/Cronkmeister/Higher-Or-Lower"
-              website=""
+              website="https://higher-lower-jc.herokuapp.com/"
               private={false}
             />
             <ProjectSideSwap
@@ -75,7 +75,7 @@ function Projects() {
               tech2="Express"
               tech3="SASS"
               github="https://github.com/Cronkmeister/inStock"
-              website=""
+              website="https://instock-jc.herokuapp.com/"
               private={true}
             />
             <Project
@@ -86,7 +86,7 @@ function Projects() {
               tech2="SASS"
               tech3="Javascript"
               github=""
-              website=""
+              website="https://bandsite-jc.herokuapp.com/"
               private={true}
             />
             <ProjectSideSwap
@@ -97,7 +97,7 @@ function Projects() {
               tech2="BEM"
               tech3="SASS"
               github=""
-              website=""
+              website="https://travelsite-jc.herokuapp.com/"
               private={true}
             />
           </div>

@@ -10,5 +10,25 @@
     }
     &__link-item {
         margin-left: 1rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0.2rem;
+            border-radius: 0.5rem;
+            background-color: $color-icon;
+            transition: transform 300ms ease-in-out;
+            transform: scaleX(0);
+        }
+        &:hover::before,
+        :focus::before {
+            transform: scaleX(1);
+            font-weight: 600;
+        }
+        
     }
 }

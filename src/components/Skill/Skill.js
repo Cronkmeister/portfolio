@@ -5,7 +5,7 @@ function Skill(props) {
   const { ref, inView } = useInView({
     threshold: 1,
     rootMargin: "0px 0px -100px 0px",
-    // triggerOnce: true,
+    triggerOnce: true,
   });
   const SkillIcon = props.icon;
 
