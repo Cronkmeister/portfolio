@@ -58,7 +58,8 @@
 
     h1 {
         font-family: 'Poppins';
-        font-size: 32px;
+        // font-size: 32px;
+        font-size: 44px;
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
         animation: mainFadeIn 2s forwards;
@@ -95,7 +96,7 @@
     display: flex;
     align-items: center;
     height: 30px;
-    margin-top: -10px;
+    margin-top: 0px;
 
     .block {
         width: 0%;
@@ -114,7 +115,7 @@
         font-weight: 400;
         font-family: 'Lato';
     //   color: #ffffff;
-        font-size: 12px;
+        font-size: 16px;
         text-transform: uppercase;
         letter-spacing: 5px;
     }
