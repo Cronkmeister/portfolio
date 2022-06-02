@@ -37,10 +37,11 @@ function App() {
                 <p>Front end web developer</p>
               </div>
             </div>
+            <div className="hero__switch-container">
+              <Switch switchTheme={switchTheme} theme={theme} />
+            </div>
           </div>
-          <div className="hero__switch-container">
-            <Switch switchTheme={switchTheme} theme={theme} />
-          </div>
+
           <Divider link="#about" />
         </section>
 
