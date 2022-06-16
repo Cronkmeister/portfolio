@@ -12,6 +12,7 @@ function NavBar(props) {
   //function to log how far down the page the window is
   const handleScroll = () => {
     const offset = window.scrollY;
+    // console.log(offset);
 
     //set offset for navbar
     if (offset > 0) {
@@ -20,25 +21,25 @@ function NavBar(props) {
       setscrolled(false);
     }
     //set offset for about section
-    if (offset > 245 && offset < 640) {
+    if (offset > 750 && offset < 1150) {
       setAboutActive(true);
     } else {
       setAboutActive(false);
     }
     //set offset for skills section
-    if (offset > 640 && offset < 1135) {
+    if (offset > 1150 && offset < 1900) {
       setSkillsActive(true);
     } else {
       setSkillsActive(false);
     }
     //set offset for Projects section
-    if (offset > 1135 && offset < 3670) {
+    if (offset > 1900 && offset < 4150) {
       setProjectsActive(true);
     } else {
       setProjectsActive(false);
     }
     //set offset for Contact section
-    if (offset > 3670) {
+    if (offset > 4150) {
       setContactActive(true);
     } else {
       setContactActive(false);
