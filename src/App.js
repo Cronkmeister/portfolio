@@ -1,7 +1,6 @@
 import "./App.scss";
 import "./styles/global.scss";
 import NavBar from "./components/NavBar/NavBar";
-import Switch from "./components/Switch/Switch";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
@@ -22,7 +21,7 @@ function App() {
 
       <div className="app">
         <section className="hero">
-          <NavBar />
+          <NavBar switchTheme={switchTheme} theme={theme} />
           <div className="hero__wrapper">
             <div className="box">
               <div className="title">
@@ -36,9 +35,6 @@ function App() {
                 <div className="block"></div>
                 <p>Front end web developer</p>
               </div>
-            </div>
-            <div className="hero__switch-container">
-              <Switch switchTheme={switchTheme} theme={theme} />
             </div>
           </div>
 
