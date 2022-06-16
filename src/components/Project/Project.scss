@@ -59,7 +59,8 @@
     &__text {
         @include body-copy;
         max-width: 75%;
-        background-color: rgba(218, 218, 218, 0.85);
+        // background-color: rgba(218, 218, 218, 0.85);
+        // background-color: rgba(95, 95, 95, 0.85);
         padding: 1rem;
         border-radius: 10px;
         pointer-events: none;   

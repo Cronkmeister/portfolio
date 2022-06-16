@@ -13,11 +13,9 @@ import travelSite from "../../assests/images/travel-site.png";
 function Projects() {
   return (
     <>
-      <section className="projects">
+      <section className="projects" id="projects">
         <div className="projects__wrapper">
-          <h2 className="projects__title" id="projects">
-            Projects
-          </h2>
+          <h2 className="projects__title">Projects</h2>
 
           <div className="proj">
             <ProjectSideSwap
