@@ -44,3 +44,21 @@
 .on-scroll {
     position: fixed;
 }
+
+.active {
+    position: relative;
+    margin-left: 1rem;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0.2rem;
+            border-radius: 0.5rem;
+            background-color: $color-icon;
+            transform: scaleX(1);
+        }
+}
