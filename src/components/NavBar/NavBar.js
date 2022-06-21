@@ -50,25 +50,69 @@ function NavBar(props) {
     window.addEventListener("scroll", handleScroll);
   });
 
+  //hamburger menu handlers
+  const toggleNav = (e) => {
+    const nav = document.querySelector(".navbar__links");
+    // const navLinks = document.querySelectorAll(".navbar__link-item a");
+    const burger = document.querySelector(".hamburger");
+    const line1 = document.querySelector(".line1");
+    const line3 = document.querySelector(".line3");
+    nav.classList.toggle("appear");
+    burger.classList.toggle("rotate");
+    line1.classList.toggle("line1-rotate");
+    line3.classList.toggle("line3-rotate");
+    //animate links
+    // navLinks.forEach((link, index) => {
+    //   if (link.style.animation) {
+    //     link.style.animation = "";
+    //   } else {
+    //     link.style.animation = `navLinkFade 0.5s ease forwards ${
+    //       index / 7 + 0.7
+    //     }s`;
+    //   }
+    // });
+  };
+
   return (
     <nav className={scrolled ? "navbar on-scroll" : "navbar"}>
       <div className="navbar__wrapper">
         <ul className="navbar__links">
-          <li className={aboutActive ? "active" : "navbar__link-item"}>
+          <li
+            className={
+              aboutActive ? "navbar__link-item active" : "navbar__link-item"
+            }
+          >
             <a href="#about">about</a>
           </li>
-          <li className={skillsActive ? "active" : "navbar__link-item"}>
+          <li
+            className={
+              skillsActive ? "navbar__link-item active" : "navbar__link-item"
+            }
+          >
             <a href="#skills">skills</a>
           </li>
-          <li className={projectsActive ? "active" : "navbar__link-item"}>
+          <li
+            className={
+              projectsActive ? "navbar__link-item active" : "navbar__link-item"
+            }
+          >
             <a href="#projects">projects</a>
           </li>
-          <li className={contactActive ? "active" : "navbar__link-item"}>
+          <li
+            className={
+              contactActive ? "navbar__link-item active" : "navbar__link-item"
+            }
+          >
             <a href="#contact">contact</a>
           </li>
         </ul>
         <div className="navbar__switch-container">
           <Switch switchTheme={props.switchTheme} theme={props.theme} />
+        </div>
+        <div className="hamburger" onClick={toggleNav}>
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
         </div>
       </div>
     </nav>
