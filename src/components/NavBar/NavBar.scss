@@ -18,7 +18,7 @@
         
         @media screen and (max-width: $tablet-breakpoint) {
             @include display-flex(column, flex-end, flex-start);
-            background-color:rgba(182, 118, 255, 0.776);
+            background-color: $nav-background-mobile;
             height: 100vh;
             width: 30%;
             position: absolute;
