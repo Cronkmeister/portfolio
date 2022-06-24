@@ -29,7 +29,7 @@ function Projects() {
               tech2="MySQL"
               tech3="SASS"
               github="https://github.com/Cronkmeister/journal"
-              website=""
+              website="https://journal-jc.netlify.app/"
               private={false}
             />
             <Project
