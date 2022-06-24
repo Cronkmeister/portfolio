@@ -29,4 +29,7 @@ body {
 .proj__text {
   background-color: ${(props) => props.theme.textBox};
 }
+.hamburger span {
+  background-color: ${(props) => props.theme.fontColor};
+}
 `;
