@@ -18,5 +18,26 @@
         max-width: 600px;
         @include body-copy;
     }
+
+    &__img-container {
+        height: 9rem;
+        width: 9rem;
+        background-color: aquamarine;
+        border-radius: 50%;
+        overflow: hidden;
+        order: 1;
+        @include component-margin-top-bottom;
+        @include tablet {
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+    }
 }
 
