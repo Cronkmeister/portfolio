@@ -1,6 +1,7 @@
 import "./About.scss";
 import Divider from "../../components/Divider/Divider";
 import { useInView } from "react-intersection-observer";
+import headshot from "../../assests/images/headshot.jpg";
 
 function About() {
   const { ref: titleRef, inView: titleIsVisible } = useInView({
@@ -34,6 +35,9 @@ function About() {
           design. My goal is to work with individuals and businesses to help
           bring their innovations into existence through technology.{" "}
         </p>
+        <div className="about__img-container">
+          <img className="about__img" alt="headshot" src={headshot}></img>
+        </div>
       </div>
       <Divider link="#skills" />
     </section>

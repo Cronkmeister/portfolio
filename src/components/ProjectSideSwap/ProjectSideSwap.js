@@ -26,16 +26,18 @@ function ProjectSideSwap(props) {
             <span className="proj__tech-list--item middle">{props.tech2}</span>
             <span className="proj__tech-list--item">{props.tech3}</span>
           </ul>
-          {props.private ? (
-            <AiFillLock className="proj__icon--lock" />
-          ) : (
-            <a href={props.github} target="_blank" rel="noreferrer">
-              <FiGithub className="proj__icon" />
+          <div className="proj__icon-container">
+            {props.private ? (
+              <AiFillLock className="proj__icon--lock" />
+            ) : (
+              <a href={props.github} target="_blank" rel="noreferrer">
+                <FiGithub className="proj__icon" />
+              </a>
+            )}
+            <a href={props.website} target="_blank" rel="noreferrer">
+              <FiExternalLink className="proj__icon" />
             </a>
-          )}
-          <a href={props.website} target="_blank" rel="noreferrer">
-            <FiExternalLink className="proj__icon" />
-          </a>
+          </div>
         </div>
         <div
           className={`proj__container--right fade-in-right ${

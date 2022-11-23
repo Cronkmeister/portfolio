@@ -33,7 +33,7 @@ function App() {
 
               <div className="role">
                 <div className="block"></div>
-                <p>Front end web developer</p>
+                <p>Full Stack web developer</p>
               </div>
             </div>
           </div>
