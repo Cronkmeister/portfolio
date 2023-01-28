@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 function Skill(props) {
   const { ref, inView } = useInView({
     threshold: 1,
-    rootMargin: "0px 0px -100px 0px",
+    rootMargin: "0px 0px -50px 0px",
     triggerOnce: true,
   });
   const SkillIcon = props.icon;

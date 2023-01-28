@@ -7,7 +7,7 @@ function Project(props) {
   const { ref: myRef, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
-    rootMargin: "0px 0px -200px 0px",
+    // rootMargin: "0px 0px -200px 0px",
   });
 
   return (
