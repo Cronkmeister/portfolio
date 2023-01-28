@@ -1,7 +1,10 @@
 import "./Projects.scss";
 import Project from "../../components/Project/Project";
 import ProjectSideSwap from "../../components/ProjectSideSwap/ProjectSideSwap";
+
 //project screenshots
+import nasa from "../../assests/images/nasa-project.png";
+import pong from "../../assests/images/pong.png";
 import journal_screenshot from "../../assests/images/screenshot-journal.png";
 import dad_jokes from "../../assests/images/dad-joke-generator.png";
 import brainflix from "../../assests/images/brainflix.png";
@@ -18,6 +21,28 @@ function Projects() {
           <h2 className="projects__title">Projects</h2>
 
           <div className="proj">
+            <ProjectSideSwap
+              screenshot={nasa}
+              title="NASA Project"
+              description="Using the NASA and SpaceX APIs to schedule future rokcet launches as well, see upcoming launches and past missions."
+              tech1="Node"
+              tech2="Express"
+              tech3="MongoDB"
+              github="https://github.com/Cronkmeister/nasa-project"
+              website="https://nasa-project.up.railway.app/"
+              private={false}
+            />
+            <Project
+              screenshot={pong}
+              title="Pong"
+              description="Replicating the classic game of pong. Using websockets to make it multi-player."
+              tech1="Javascript"
+              tech2="Socket.io"
+              tech3="Docker"
+              github="https://github.com/Cronkmeister/multi-player-pong"
+              website="https://multi-player-pong.up.railway.app/"
+              private={false}
+            />
             <ProjectSideSwap
               screenshot={journal_screenshot}
               title="Journal"
@@ -62,7 +87,7 @@ function Projects() {
               tech2="HTML"
               tech3="SASS"
               github="https://github.com/Cronkmeister/Higher-Or-Lower"
-              website="https://higher-lower-jc.herokuapp.com/"
+              website="https://higher-lower-jc.netlify.app/"
               private={false}
             />
             <ProjectSideSwap
@@ -84,7 +109,7 @@ function Projects() {
               tech2="SASS"
               tech3="Javascript"
               github=""
-              website="https://bandsite-jc.herokuapp.com/"
+              website="https://bandsite-jc.netlify.app/"
               private={true}
             />
             <ProjectSideSwap
@@ -95,7 +120,7 @@ function Projects() {
               tech2="BEM"
               tech3="SASS"
               github=""
-              website="https://travelsite-jc.herokuapp.com/"
+              website="https://travel-sitejc.netlify.app/"
               private={true}
             />
           </div>
