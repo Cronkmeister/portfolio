@@ -11,8 +11,7 @@ function Contact() {
           Contact
         </h1>
         <p className="contact__text">
-          I would love to chat with you! Please feel to feel out to me using any
-          medium
+          I would love to chat with you! Please reach out to me on any medium
         </p>
         <p className="contact__text">email: jonnycronk@me.com</p>
         <div className="contact__icons-container">
@@ -20,7 +19,7 @@ function Contact() {
             <FiMail className="contact__icon" />
           </a>
           <a
-            href="https://www.linkedin.com/in/jonathan-cronk/"
+            href="https://www.linkedin.com/in/jonny-cronk/"
             target="_blank"
             rel="noreferrer"
           >
