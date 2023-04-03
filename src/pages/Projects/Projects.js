@@ -98,7 +98,7 @@ function Projects() {
               tech2="Express"
               tech3="SASS"
               github="https://github.com/Cronkmeister/inStock"
-              website="https://instock-jc.herokuapp.com/"
+              website="https://instock-jc.netlify.app/"
               private={true}
             />
             <Project
