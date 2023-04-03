@@ -35,13 +35,12 @@ function About() {
           design. My goal is to work with individuals and businesses to help
           bring their innovations into existence through technology.{" "}
         </p>
-        <div className="about__img-container">
-          <img
-            className="about__img"
-            alt="headshot"
-            src={headshot}
-            ref={textRef}
-          ></img>
+        <div
+          className={`about__img-container fade-in ${
+            textIsVisible ? "appear" : ""
+          }`}
+        >
+          <img className="about__img" alt="headshot" src={headshot}></img>
         </div>
       </div>
       <Divider link="#skills" />
