@@ -18,7 +18,12 @@ function Project(props) {
             inView ? "appear" : ""
           }`}
         >
-          <a href={props.website} target="_blank" rel="noreferrer">
+          <a
+            className="proj__img--container"
+            href={props.website}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="proj__img"
               src={props.screenshot}
@@ -26,6 +31,7 @@ function Project(props) {
             ></img>
           </a>
         </div>
+
         <div
           className={`proj__container--right fade-in-right right ${
             inView ? "appear" : ""
