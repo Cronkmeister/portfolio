@@ -3,6 +3,8 @@ import Project from "../../components/Project/Project";
 import ProjectSideSwap from "../../components/ProjectSideSwap/ProjectSideSwap";
 
 //project screenshots
+import tality from "../../assests/images/tality-min.png";
+import designStudio from "../../assests/images/161Design-min.png";
 import nasa from "../../assests/images/nasa-project.png";
 import pong from "../../assests/images/pong.png";
 import journal_screenshot from "../../assests/images/screenshot-journal.png";
@@ -21,6 +23,29 @@ function Projects() {
           <h2 className="projects__title">Projects</h2>
 
           <div className="proj">
+            <ProjectSideSwap
+              screenshot={tality}
+              title="Tality"
+              description="Website redesign and modernisation for a cold plunge and sauna company. Design done in figma. Site built on Wix"
+              tech1="Figma"
+              tech2="Wix"
+              tech3="Velo"
+              github=""
+              website="https://www.talityspa.com/"
+              private={true}
+            />
+            <Project
+              screenshot={designStudio}
+              title="161 Design Studio"
+              description="Fixed styling issues, responsive screen sizes and custom fonts. Introduced analytics and optimized for SEO"
+              tech1="Wordpress"
+              tech2="Divi"
+              tech3="Figma"
+              github=""
+              website="https://161designstudio.com/"
+              private={true}
+            />
+
             <ProjectSideSwap
               screenshot={nasa}
               title="NASA Project"

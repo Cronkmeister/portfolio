@@ -39,13 +39,19 @@ function ProjectSideSwap(props) {
             </a>
           </div>
         </div>
+
         <div
           className={`proj__container--right fade-in-right ${
             inView ? "appear" : ""
           }`}
           ref={myRef}
         >
-          <a href={props.website} target="_blank" rel="noreferrer">
+          <a
+            className="proj__img--container"
+            href={props.website}
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="proj__img"
               src={props.screenshot}
