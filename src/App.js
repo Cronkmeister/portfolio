@@ -2,6 +2,7 @@ import "./App.scss";
 import "./styles/global.scss";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./pages/About/About";
+import Services from "./pages/Services/Services";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
@@ -33,7 +34,7 @@ function App() {
 
               <div className="role">
                 <div className="block"></div>
-                <p>Full Stack web developer</p>
+                <p>Web Designer & Developer</p>
               </div>
             </div>
           </div>
@@ -42,6 +43,7 @@ function App() {
         </section>
 
         <About />
+        {/* <Services /> */}
         <Skills />
         <Projects />
         <Contact />

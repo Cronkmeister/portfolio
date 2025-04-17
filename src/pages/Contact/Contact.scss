@@ -16,10 +16,12 @@
     &__icons-container {
         text-align: center;
         @include component-margin-top-bottom-small;
+        // height: 4rem;
     }
     &__icon {
         font-size: 2rem;
-        padding: 4px 12px;
+        margin: 4px 12px;
+        
         &:hover {
             color: $color-icon;
             transform: scale(1.1);

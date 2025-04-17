@@ -3,6 +3,8 @@ import Project from "../../components/Project/Project";
 import ProjectSideSwap from "../../components/ProjectSideSwap/ProjectSideSwap";
 
 //project screenshots
+import pomodoro from "../../assests/images/pomodoro.png";
+import iconic from "../../assests/images/iconic.png";
 import tality from "../../assests/images/tality-min.png";
 import designStudio from "../../assests/images/161Design-min.png";
 import nasa from "../../assests/images/nasa-project.png";
@@ -43,6 +45,29 @@ function Projects() {
               tech3="Figma"
               github=""
               website="https://161designstudio.com/"
+              private={true}
+            />
+
+            <ProjectSideSwap
+              screenshot={pomodoro}
+              title="Pomodoro App"
+              description="Creating a functional pomodoro web app with settings for changing time and design. Figma files courtesy of FrontEndMentor.io"
+              tech1="Nextjs"
+              tech2="Tailwind"
+              tech3="v0"
+              github="https://github.com/Cronkmeister/pomodoro"
+              website="https://jcpomodoro.netlify.app/"
+              private={false}
+            />
+            <Project
+              screenshot={iconic}
+              title="Iconic Concierge"
+              description="Work for a Gentlemen's Magazine. Upgraded the styling to clients requests to more meet modern website standards"
+              tech1="Wordpress"
+              tech2="WPBakery"
+              tech3="Figma"
+              github=""
+              website="https://www.iconic-concierge.com/"
               private={true}
             />
 
