@@ -5,12 +5,14 @@ export const lightTheme = {
   fontColor: "#000000",
   boxShadow: "rgba(33, 35, 38, 0.1) 0px 10px 10px -10px",
   textBox: " rgba(218, 218, 218, 0.85);",
+  serviceCardBg: "none",
 };
 export const darkTheme = {
   body: "#292C35",
   fontColor: "#ffffff",
   boxShadow: "rgba(187, 192, 200, 0.1) 0px 10px 10px -10px",
   textBox: "rgba(95, 95, 95, 0.85)",
+  serviceCardBg: "rgba(95, 95, 95, 0.85);",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -31,5 +33,9 @@ body {
 }
 .hamburger span {
   background-color: ${(props) => props.theme.fontColor};
+}
+
+.card__bx {
+  background-color: ${(props) => props.theme.serviceCardBg};
 }
 `;
