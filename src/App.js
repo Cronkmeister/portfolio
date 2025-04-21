@@ -39,11 +39,11 @@ function App() {
             </div>
           </div>
 
-          <Divider link="#about" />
+          <Divider link="#services" />
         </section>
 
+        <Services />
         <About />
-        {/* <Services /> */}
         <Skills />
         <Projects />
         <Contact />

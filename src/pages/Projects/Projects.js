@@ -54,7 +54,7 @@ function Projects() {
               description="Creating a functional pomodoro web app with settings for changing time and design. Figma files courtesy of FrontEndMentor.io"
               tech1="Nextjs"
               tech2="Tailwind"
-              tech3="v0"
+              tech3="Vercel"
               github="https://github.com/Cronkmeister/pomodoro"
               website="https://jcpomodoro.netlify.app/"
               private={false}

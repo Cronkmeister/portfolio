@@ -5,7 +5,7 @@ import Skill from "../../components/Skill/Skill";
 
 //icons
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { IoLogoCss3, IoLogoSass } from "react-icons/io";
+import { IoLogoCss3 } from "react-icons/io";
 import {
   SiJavascript,
   SiExpress,
@@ -14,7 +14,13 @@ import {
   SiPostman,
 } from "react-icons/si";
 import { GrReactjs, GrNode, GrMysql } from "react-icons/gr";
-import { FaDatabase, FaGithub, FaTerminal, FaFigma } from "react-icons/fa";
+import {
+  FaDatabase,
+  FaGithub,
+  FaTerminal,
+  FaFigma,
+  FaWordpress,
+} from "react-icons/fa";
 
 function Skills() {
   const { ref: titleRef, inView: titleIsVisible } = useInView({
@@ -40,7 +46,7 @@ function Skills() {
             <Skill skill="HTML5" icon={AiOutlineHtml5} />
             <Skill skill="CSS" icon={IoLogoCss3} />
             <Skill skill="Javascript" icon={SiJavascript} />
-            <Skill skill="Sass" icon={IoLogoSass} />
+            <Skill skill="Wordpress" icon={FaWordpress} />
             <Skill skill="React" icon={GrReactjs} />
             {/* back end */}
             <Skill skill="Node" icon={GrNode} />

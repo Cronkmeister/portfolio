@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 function NavBar(props) {
   const [scrolled, setscrolled] = useState(false);
+  const [servicesActive, setServicesActive] = useState(false);
   const [aboutActive, setAboutActive] = useState(false);
   const [skillsActive, setSkillsActive] = useState(false);
   const [projectsActive, setProjectsActive] = useState(false);
@@ -20,26 +21,32 @@ function NavBar(props) {
     } else {
       setscrolled(false);
     }
-    //set offset for about section
+    //set offset for services section
     if (offset > 750 && offset < 1150) {
+      setServicesActive(true);
+    } else {
+      setServicesActive(false);
+    }
+    //set offset for about section
+    if (offset > 1150 && offset < 1900) {
       setAboutActive(true);
     } else {
       setAboutActive(false);
     }
     //set offset for skills section
-    if (offset > 1150 && offset < 1900) {
+    if (offset > 1900 && offset < 2600) {
       setSkillsActive(true);
     } else {
       setSkillsActive(false);
     }
     //set offset for Projects section
-    if (offset > 1900 && offset < 4150) {
+    if (offset > 2600 && offset < 7750) {
       setProjectsActive(true);
     } else {
       setProjectsActive(false);
     }
     //set offset for Contact section
-    if (offset > 4150) {
+    if (offset > 7750) {
       setContactActive(true);
     } else {
       setContactActive(false);
@@ -77,6 +84,13 @@ function NavBar(props) {
     <nav className={scrolled ? "navbar on-scroll" : "navbar"}>
       <div className="navbar__wrapper">
         <ul className="navbar__links">
+          <li
+            className={
+              servicesActive ? "navbar__link-item active" : "navbar__link-item"
+            }
+          >
+            <a href="#services">services</a>
+          </li>
           <li
             className={
               aboutActive ? "navbar__link-item active" : "navbar__link-item"
