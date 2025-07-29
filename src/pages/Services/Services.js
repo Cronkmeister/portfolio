@@ -43,7 +43,7 @@ function Services() {
                 />
               </div>
               <div class="card__content">
-                <h3>Develoment</h3>
+                <h3>Development</h3>
                 <p>
                   Building fast, functional, and fully responsive websites that
                   work on every device.

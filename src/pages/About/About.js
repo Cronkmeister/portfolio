@@ -27,13 +27,19 @@ function About() {
           className={`about__text fade-in ${textIsVisible ? "appear" : ""}`}
           ref={textRef}
         >
-          From a young age I have been building. I loved creating structures
-          from legos as a kid and later on working as a chef in restaurants.
-          Taking individual parts and creating something awesome out of them. I
-          find the same joy in coding - writing lines of text, and from them,
-          building websites and applications that have purpose, meaning and good
-          design. My goal is to work with individuals and businesses to help
-          bring their innovations into existence through technology.{" "}
+          I’m a web designer and developer based in Vancouver, BC, specializing
+          in custom websites for small businesses, startups, and entrepreneurs.
+          With a background in both creative and technical fields — from
+          professional kitchens to coding — I create modern, responsive websites
+          that are not only visually engaging but also optimized for
+          performance, SEO, and drive traffic.
+          <br />
+          <br />
+          Whether you’re launching a new brand, improving an existing site, or
+          need help translating your vision into a polished online presence, I
+          can help you design, build, and deploy a website that reflects your
+          goals. Let’s bring your ideas to life with clean code, purposeful
+          design, and powerful functionality.
         </p>
         <div
           className={`about__img-container fade-in ${
