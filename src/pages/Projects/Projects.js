@@ -7,6 +7,7 @@ import pomodoro from "../../assests/images/pomodoro.png";
 import iconic from "../../assests/images/iconic.png";
 import tality from "../../assests/images/tality-min.png";
 import designStudio from "../../assests/images/161Design-min.png";
+import photosnap from "../../assests/images/photosnap.png";
 import nasa from "../../assests/images/nasa-project.png";
 import pong from "../../assests/images/pong.png";
 import journal_screenshot from "../../assests/images/screenshot-journal.png";
@@ -47,6 +48,28 @@ function Projects() {
               website="https://161designstudio.com/"
               private={true}
             />
+            <ProjectSideSwap
+              screenshot={iconic}
+              title="Iconic Concierge"
+              description="Work for a Gentlemen's Magazine. Upgraded the styling to clients requests to more meet modern website standards"
+              tech1="Wordpress"
+              tech2="WPBakery"
+              tech3="Figma"
+              github=""
+              website="https://www.iconic-concierge.com/"
+              private={true}
+            />
+            <Project
+              screenshot={photosnap}
+              title="Photosnap"
+              description="A multi-page website for a photography company. Built with React and Tailwind CSS."
+              tech1="React"
+              tech2="Tailwind"
+              tech3="Netlify"
+              github="https://github.com/Cronkmeister/photosnap"
+              website="https://photosnap-jc.netlify.app/"
+              private={false}
+            />
 
             <ProjectSideSwap
               screenshot={pomodoro}
@@ -59,19 +82,8 @@ function Projects() {
               website="https://jcpomodoro.netlify.app/"
               private={false}
             />
-            <Project
-              screenshot={iconic}
-              title="Iconic Concierge"
-              description="Work for a Gentlemen's Magazine. Upgraded the styling to clients requests to more meet modern website standards"
-              tech1="Wordpress"
-              tech2="WPBakery"
-              tech3="Figma"
-              github=""
-              website="https://www.iconic-concierge.com/"
-              private={true}
-            />
 
-            <ProjectSideSwap
+            <Project
               screenshot={nasa}
               title="NASA Project"
               description="Using the NASA and SpaceX APIs to schedule future rokcet launches as well, see upcoming launches and past missions."
@@ -82,7 +94,7 @@ function Projects() {
               website="https://nasa-project.up.railway.app/"
               private={false}
             />
-            <Project
+            <ProjectSideSwap
               screenshot={pong}
               title="Pong"
               description="Replicating the classic game of pong. Using websockets to make it multi-player."
@@ -93,7 +105,7 @@ function Projects() {
               website="https://multi-player-pong.up.railway.app/"
               private={false}
             />
-            <ProjectSideSwap
+            <Project
               screenshot={journal_screenshot}
               title="Journal"
               description="An app to showcase my film photographs in a well desgined gallery. A
@@ -107,7 +119,7 @@ function Projects() {
               website="https://journal-jc.netlify.app/"
               private={false}
             />
-            <Project
+            <ProjectSideSwap
               screenshot={dad_jokes}
               title="Dad Joke Generator"
               description="Playing around with the OpenAI api. Enter a topic and let the generator tell you a jokes. Nevermind the Turing Test, this is the true test for AI"
@@ -118,7 +130,7 @@ function Projects() {
               website="https://joke-generator-three.vercel.app/"
               private={false}
             />
-            <ProjectSideSwap
+            <Project
               screenshot={brainflix}
               title="Brainflix"
               description="A webpage to simulate a video streaming platform"
@@ -129,7 +141,7 @@ function Projects() {
               website="https://brainflix-jc.netlify.app/"
               private={true}
             />
-            <Project
+            <ProjectSideSwap
               screenshot={higherLower}
               title="Higher or Lower"
               description="Replicating the classic card game: 'Higher or Lower.' See how many in a row you can get!"
@@ -140,7 +152,7 @@ function Projects() {
               website="https://higher-lower-jc.netlify.app/"
               private={false}
             />
-            <ProjectSideSwap
+            <Project
               screenshot={inStock}
               title="In Stock"
               description="Replicating an inventory website with a backend server."
@@ -151,7 +163,7 @@ function Projects() {
               website="https://instock-jc.netlify.app/"
               private={true}
             />
-            <Project
+            <ProjectSideSwap
               screenshot={bandsite}
               title="Band Site"
               description="The homepage for a fictional band"
@@ -162,7 +174,7 @@ function Projects() {
               website="https://bandsite-jc.netlify.app/"
               private={true}
             />
-            <ProjectSideSwap
+            <Project
               screenshot={travelSite}
               title="Travel Site"
               description="The website for a fictional travel site"
